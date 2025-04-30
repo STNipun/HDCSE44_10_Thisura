@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .left-section{
+            flex: 1;
+            background: linear-gradient(#4A102A, #FCF259);
+            position: relative;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left-section h1{
+            text-transform: uppercase;
+            font-size: 2em;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .left-section p{
+            color: white;
+            font-size: 1em;
+        }
+        .shepes{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .shepe{
+            position: absolute;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            transform: rotate(45deg);
+        }
+        .shep-1{
+            width: 300px;
+            height: 50px;
+            bottom: 30px;
+            left: 5px;
+        }
+        .shep-2{
+            width: 300px;
+            height: 50px;
+            bottom: 30px;
+            left: 10px;
+        }
+        .shep-3{
+            width: 300px;
+            height: 50px;
+            bottom: 30px;
+            left: 5px;
+        }
+
+        .right-section{
+            flex: 1;
+            background: white;
+            position: relative;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+        }
+        .login-form h2{
+            width: 100%;
+            max-width: 400px;
+            color:#4A102A;
+            text-transform: uppercase;
+        }
+
+        .form-group{
+            position: relative;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 400px;
+            
+        }
+        
+        .form-group img{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+        }
+    
+
+    
+    </style>
+
+</head>
+<body>
+    <div class="left-section">
+        <h1>Welcomt to Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Odio facilis iure commodi explicabo dolorum voluptas, error dicta possimus! 
+            Tempore ipsa officia animi tempora esse illo adipisci tenetur porro sequi enim!</p>
+            <div class="shepes">
+                <div class="shepe shep-1"></div>
+                <div class="shepe shep-2"></div>
+                <div class="shepe shep-3"></div>
+            </div>
+    </div>
+
+    <div class="right-section">
+        <form>
+            <div class="login-form">
+                <h2>User Login</h2>
+                <!-- username -->
+                <div class="form-group">
+                    <span class="icon"><img src="https://img.icons8.com/ios-filled/100/user.png" alt="user"/></span>
+                    <input type="text" placeholder="Enter Your Username" required>
+                </div>
+                <!-- password -->
+                <div class="form-group">
+                    <span class="icon"><img src="https://img.icons8.com/ios-filled/100/password.png" alt="password"/></span>
+                    <input type="password" placeholder="password" required>
+                </div>
+                <lable class="options">
+                    <input type="checkbox"> Remember
+                    <a href="#">Forget Password?</a>
+                </lable>
+                <button>Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
